@@ -1,0 +1,25 @@
+{
+  "api_keys": {
+    "openai": "sk-proj-XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "gemini": "AIzaSyXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+  },
+  "trading_config": {
+    "initial_capital": 100000,
+    "transaction_cost": 0.001,
+    "max_position_size": 0.1,
+    "risk_per_trade": 0.02,
+    "confidence_threshold": 0.6
+  },
+  "model_config": {
+    "hidden_dims": [64, 32, 16],
+    "dropout": 0.1,
+    "prior_std": 0.1,
+    "use_uncertainty": true,
+    "gnn_type": "GCN"
+  },
+  "data_config": {
+    "lookback_window": 30,
+    "correlation_threshold": 0.3,
+    "top_k_edges": 5
+  }
+}

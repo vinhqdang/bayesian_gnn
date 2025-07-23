@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(touch:*)",
+      "Bash(python setup.py)",
+      "Bash(git add:*)"
+    ],
+    "deny": []
+  }
+}
