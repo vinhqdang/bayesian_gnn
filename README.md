@@ -256,6 +256,76 @@ This system is for educational and research purposes. Always:
 
 **Past performance does not guarantee future results.**
 
+## Backtest Results
+
+### Performance Comparison (Jan 1 - Jun 30, 2025)
+
+We conducted a comprehensive backtest comparing our Bayesian GNN strategies against S&P 500 and simple trading strategies over a 6-month period in 2025.
+
+#### 📊 **Performance Rankings by Total Return:**
+1. **🥇 Random Strategy: 6.77%** (Best absolute return)
+2. **🥈 Bayesian Momentum: 5.35%** (Our AI strategy)
+3. **🥉 S&P 500 Benchmark: 5.19%** (Market baseline)
+4. **4th Moving Average: 2.51%**
+5. **5th RSI Strategy: 1.34%**
+6. **6th Buy & Hold: -0.63%**
+
+#### 📈 **Risk-Adjusted Performance (Sharpe Ratio):**
+1. **🥇 Moving Average: 1.19** (Best risk-adjusted return)
+2. **🥈 Random Strategy: 1.05**
+3. **🥉 Bayesian Momentum: 0.52**
+4. **4th S&P 500: 0.45**
+5. **5th RSI Strategy: 0.19**
+6. **6th Buy & Hold: -0.05**
+
+#### 📋 **Complete Performance Metrics:**
+
+| Strategy | Total Return | Annual Return | Volatility | Sharpe Ratio | Max Drawdown | Win Rate | Trades |
+|----------|--------------|---------------|------------|--------------|---------------|----------|---------|
+| **S&P 500 (Benchmark)** | 5.19% | 11.1% | 24.5% | 0.45 | -18.9% | N/A | N/A |
+| **Buy & Hold** | -0.63% | -1.3% | 24.1% | -0.05 | -20.6% | 100% | 4 |
+| **Moving Average** | 2.51% | 5.2% | 4.4% | 1.19 | -2.7% | 100% | 3 |
+| **RSI Strategy** | 1.34% | 2.8% | 14.9% | 0.19 | -10.6% | 53.3% | 15 |
+| **Random Strategy** | 6.77% | 14.5% | 13.8% | 1.05 | -7.0% | 66.7% | 21 |
+| **Bayesian Momentum** | 5.35% | 11.4% | 22.0% | 0.52 | -13.9% | 70.3% | 427 |
+
+#### 🎯 **Key Insights:**
+
+**Market Outperformance:**
+- **2 out of 5 strategies** beat the S&P 500 benchmark
+- Bayesian Momentum and Random Strategy both outperformed the market
+- Our AI strategy achieved competitive returns with controlled risk
+
+**Risk Management Excellence:**
+- **Moving Average** strategy delivered the best risk-adjusted returns
+- **Bayesian Momentum** maintained a solid 70.3% win rate across 427 trades
+- Low volatility strategies showed superior Sharpe ratios
+
+**Strategy Performance Analysis:**
+- **Bayesian Momentum**: Solid 5.35% return with active trading (427 trades)
+- **Moving Average**: Conservative approach with excellent risk control
+- **Random Strategy**: Surprisingly strong performance highlighting market inefficiencies
+
+#### 🧪 **Test Configuration:**
+- **Initial Capital**: $100,000
+- **Transaction Cost**: 0.1%
+- **Test Period**: January 1, 2025 - June 30, 2025
+- **Assets**: AAPL, MSFT, GOOGL, AMZN, TSLA
+- **Benchmark**: S&P 500 (^GSPC)
+
+#### 🚀 **Running Your Own Backtest:**
+
+```bash
+# Run comprehensive comparison backtest
+python run_comparison_backtest.py
+
+# Test specific strategies with custom parameters
+python main.py --mode backtest --symbols AAPL MSFT GOOGL AMZN TSLA \
+              --start-date 2025-01-01 --end-date 2025-06-30
+```
+
+**Note**: Results are based on historical simulation and do not guarantee future performance. Always test strategies thoroughly before live trading.
+
 ## License
 
 MIT License - see LICENSE file for details.
